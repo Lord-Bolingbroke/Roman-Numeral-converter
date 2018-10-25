@@ -9,7 +9,11 @@ function lessThanThree (number) {
 }
 
 function lessThanEight (number) {
-
+  if (number > 4 && number <= 8) {
+    for (var i = 0; i < 3; i++) {
+      romNum.push("")
+    }
+  } return romNum.join("");
 }
 
 var countThree = function() {
