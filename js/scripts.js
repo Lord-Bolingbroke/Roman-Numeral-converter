@@ -68,3 +68,13 @@ function findNine(number) {
     return "IX";
   }
 }
+
+//check the string for lenght
+
+//check the last character in string has 4 or 9
+
+//if it does slice the 4 or 9 and push to an array
+
+//convert the remaining string to number push to anotherArray
+
+//join the arrays after converting to roman numeral 
