@@ -9,7 +9,11 @@ function convertNumber (number) {
     return betweenFourAndNine(number)
   } else if (number === 9) {
     return "IX"
-  } else if (number >= 10) {
+  } else if (number === 14) {
+    return "XIV"
+  } else if (number === 19) {
+    return "XIX"
+  } else if (number >= 10 && number < 40) {
     return greaterThanTen(number)
   }
 }
@@ -27,7 +31,7 @@ function betweenFourAndNine(number){
 }
 
 function greaterThanTen(number){
-  return "X" + remainderOfTen(number % 10)
+  return tenOrGreater(number)+ remainderOfTen(number % 10)
 }
 
 function remainderOfTen (remainder) {
@@ -35,5 +39,32 @@ function remainderOfTen (remainder) {
     return threeOrLess(remainder);
   } else if (remainder >= 5) {
     return betweenFourAndNine(remainder);
+  }
+}
+
+function tenOrGreater(number){
+  var romanNum = [];
+   for( var i = 1 ; i < (number/10); i++) {
+      romanNum.push("X");
+  }
+  return romanNum.join('');
+}
+
+
+function findFour(number) {
+  var string = number.toString()
+  var slice = string.slice(-1);
+  console.log(slice);
+  if (slice === '4') {
+    return "IV";
+  }
+}
+
+function findNine(number) {
+  var string = number.toString()
+  var slice = string.slice(-1);
+  console.log(slice);
+  if (slice === '9') {
+    return "IX";
   }
 }
