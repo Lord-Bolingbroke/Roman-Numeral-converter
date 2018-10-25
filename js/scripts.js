@@ -1,28 +1,36 @@
-function one (number) {
-  if (number === 1) {
-    return "I";
-  }
-  return false;
-}
+romNum = [];
 
-function countTwo (number) {
+function lessThanThree (number) {
   if (number < 3) {
-    return number + 1 + 1;
-  }
-  return false;
+    for (var i = 0; i < 3; i++) {
+      romNum.push("I")
+    }
+  } return romNum.join("");
 }
 
-var countThree = function(number) {
-  for (var i = number; number < 3; number++) {
-  }
-  return number;
+function lessThanEight (number) {
+
 }
 
-// var countThree = function(number) {
-//   for (var i = 0; i < 3 ; number++, i++){
-//     (number - 1) + i ;
-//     console.log(number)
+var countThree = function() {
+  for (var i = 0; i < 3; i++) {
+    console.log(i);
+  }
+  return one(i);
+}
+
 //
+// function group (number) {
+//   if (number < 3) {
+//     return "Use I";
+//   } else if (number > 3 || number < 10) {
+//     return "Use V"
+//   } else if (number > 10) {
+//     return "use X"
 //   }
-//   return number;
+//   return false;
 // }
+//
+// number = 11 = X
+// output = (number/5)
+// if number was 11 = vv +I = for more than 2 v = x
